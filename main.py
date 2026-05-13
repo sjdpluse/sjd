@@ -67,7 +67,6 @@ async def handle_update(update: dict):
 
             if data == "back_main":
                 await telegram.edit_message(chat_id, message_id, "منوی اصلی:", reply_markup=main_menu())
-            # می‌توانید سایر کیبوردها را اینجا اضافه کنید
             else:
                 await telegram.answer_callback(query["id"], "این دکمه هنوز فعال نشده است.", show_alert=False)
 
